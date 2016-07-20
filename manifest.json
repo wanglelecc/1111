@@ -1,0 +1,42 @@
+{
+    "name": "双11剁手神器", 
+    "icons": {
+        "16": "icons/icon_16.png",
+        "32": "icons/icon_32.png", 
+        "64": "icons/icon_64.png", 
+        "128": "icons/icon_128.png"
+    }, 
+    "version": "1.0.0", 
+    "manifest_version": 2, 
+    "permissions": [
+        "notifications", 
+        "webRequest", 
+        "webRequestBlocking", 
+        "*://*/*"
+    ], 
+    "description": "要是你有个败家娘们在双11大肆买买买！总监我赐给你这个跪舔她或弄疯她的机会（禁用立即购买等败家按钮，并弹出你想对她说的话，可表白，可作死，随你SHE……）\n\n适用网站：\n天猫、淘宝、京东、苏宁、国美、当当、一号店（那姐们就上这几个）\n\n免责声明：\n这是总监我逗媳妇儿的，万一你因此离婚了，做鬼也别来找我……\n\nP.S. 破解方法：\n关闭或卸载本插件，很简单，不懂问度娘。\n\n", 
+    "background": {
+        "persistent": true, 
+        "page": "core/background.html"
+    }, 
+    "app": {
+        "launch": {
+            "local_path": "core/main.html"
+        }
+    }, 
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ], 
+            "css": [
+                "core/css/buy_zh.css"
+            ], 
+            "js": [
+                "core/js/config.js", 
+                "core/js/buy_zh.js"
+            ]
+        }
+    ], 
+    "options_page": "core/options.html"
+}

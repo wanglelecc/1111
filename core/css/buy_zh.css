@@ -1,0 +1,29 @@
+
+/* JD */
+#choose-btn-easybuy a,.addcart{display:none!important;}
+#choose-btn-dbt,.identifying-code{display:none!important;}
+.jd-submit-btn { background: #e54346 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    height: 52px;
+    line-height: 52px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 96px;
+}
+
+.renxf-box,.btn-wrap,.item_act,.bottom_p,.buy_button,#buy_package_button{display:none!important;}
+
+#gEasyShopping{
+    background: none repeat scroll 0 0 #2F7738;
+    color: #fff;
+    font: 700 18px/36px 'Microsoft YaHei';
+    height: 38px;
+    margin-right: 10px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
